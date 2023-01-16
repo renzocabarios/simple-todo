@@ -10,10 +10,10 @@ function Input(props: InputProps) {
     <>
       <input
         type={type}
-        name="name"
+        name=""
         placeholder={placeholder}
         onChange={(e: React.FormEvent<HTMLInputElement>) => {
-          onChange(e);
+          onChange(e.currentTarget.value);
         }}
       />
     </>
