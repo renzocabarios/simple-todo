@@ -1,3 +1,4 @@
+import styles from "./Login.module.css";
 import { Button, FormInput } from "../../components";
 import { useState } from "react";
 
@@ -7,9 +8,13 @@ function Login() {
 
   return (
     <>
-      <FormInput content="email" onChange={setemail} />
-      <FormInput content="password" onChange={setpassword} />
-      <Button title="Login" onClick={() => {}} />
+      <div className={styles.view}>
+        <div className={styles.form}>
+          <FormInput content="email" onChange={setemail} />
+          <FormInput content="password" onChange={setpassword} />
+          <Button title="Login" onClick={() => {}} />
+        </div>
+      </div>
     </>
   );
 }
