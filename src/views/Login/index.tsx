@@ -2,20 +2,14 @@ import { Button, FormInput } from "../../components";
 import { useState } from "react";
 
 function Login() {
-  const [form, setform] = useState({
-    email: "",
-    password: "",
-  });
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
 
   return (
     <>
-      <FormInput content="password" onChange={setform} />
-      <Button
-        title="Login"
-        onClick={() => {
-          console.log(form);
-        }}
-      />
+      <FormInput content="email" onChange={setemail} />
+      <FormInput content="password" onChange={setpassword} />
+      <Button title="Login" onClick={() => {}} />
     </>
   );
 }
