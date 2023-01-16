@@ -1,9 +1,11 @@
-import { Button } from "./components";
-
+import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Login } from "./views";
 function App() {
   return (
     <>
-      <Button title="button" onClick={() => {}} />
+      <Routes>
+        <Route path="/" element={<Login />}></Route>
+      </Routes>
     </>
   );
 }

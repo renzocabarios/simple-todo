@@ -1,11 +1,21 @@
 interface InputProps {
-  title: string;
+  type?: string;
+  placeholder?: string;
+  onChange: (setState: any) => void;
 }
+function Input(props: InputProps) {
+  const { type = "text", placeholder = "", onChange = () => {} } = props;
 
-function Input() {
   return (
     <>
-      <input />
+      <input
+        type={type}
+        name="name"
+        placeholder={placeholder}
+        onChange={(e: React.FormEvent<HTMLInputElement>) => {
+          onChange(e);
+        }}
+      />
     </>
   );
 }
