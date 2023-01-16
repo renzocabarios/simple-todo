@@ -3,12 +3,7 @@ import Text from "../Text";
 
 interface FormInputProps {
   content: string;
-  onChange: React.Dispatch<
-    React.SetStateAction<{
-      email: string;
-      password: string;
-    }>
-  >;
+  onChange: any;
 }
 
 function FormInput(props: FormInputProps) {
@@ -16,7 +11,7 @@ function FormInput(props: FormInputProps) {
   return (
     <>
       <Text content={content} />
-      <Input onChange={onChange} />
+      <Input onChange={onChange} type="password" />
     </>
   );
 }
