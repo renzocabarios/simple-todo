@@ -1,0 +1,17 @@
+input {
+  border-radius: 5px;
+  background: rgb(249, 250, 250);
+  border: 1px solid rgb(181, 189, 196);
+  font-size: 12px;
+  height: 25px;
+  line-height: 24px;
+  padding: 3px 4px;
+  color: rgb(8, 9, 10);
+  box-shadow: none;
+}
+
+:focus {
+  background-color: #fff;
+  border-color: #3b49df;
+  box-shadow: 1px 1px 0 #3b49df;
+}

@@ -1,3 +1,5 @@
+import styles from "./Input.module.css";
+
 interface InputProps {
   type?: string;
   placeholder?: string;
@@ -15,6 +17,7 @@ function Input(props: InputProps) {
         onChange={(e: React.FormEvent<HTMLInputElement>) => {
           onChange(e.currentTarget.value);
         }}
+        className={styles.input}
       />
     </>
   );
