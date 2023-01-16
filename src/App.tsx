@@ -1,5 +1,11 @@
+import { Button } from "./components";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Button title="button" onClick={() => {}} />
+    </>
+  );
 }
 
 export default App;
